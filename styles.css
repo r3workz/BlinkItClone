@@ -187,20 +187,19 @@ a {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
 }
 
 #s2 .dealsRow {
     display: flex;
     align-items: stretch;
-    overflow: scroll;
-    padding-bottom: 0.8%;
+    overflow: scroll hidden;
+    /*padding-bottom: 0.8%;*/
     border-radius: 16px;
     gap: 20px;
 }
 
-.dealsRow::-webkit-scrollbar {
-    display: none;
-}
+
 
 .dealsRow > img {
     flex: 0 0 auto;
@@ -217,6 +216,7 @@ a {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
 }
 
 #s3 .cateRow {
@@ -231,6 +231,10 @@ a {
     border-radius: 0;
     object-fit: fill;
     cursor: pointer;
+}
+
+#s3::-webkit-scrollbar {
+    display: none;
 }
 
 /* Section 4 Styles */
